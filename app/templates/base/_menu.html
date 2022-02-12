@@ -1,14 +1,14 @@
 {% macro show_menu() %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Vulnerabilidades WEB</a>
+    <a class="navbar-brand" href="{{ url_for('xssreflejado.index') }}">Tema 3 Vacío</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ url_for('xssreflejado.index') }}">Home</a>
         </li>
 {#        <li class="nav-item">#}
 {#          <a class="nav-link" href="#">Template 1</a>#}
@@ -16,7 +16,7 @@
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">XSS Reflejado</a>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{{ url_for('reflejado1') }}">Reflejado 1</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('xssreflejado.reflejado1') }}">Reflejado 1</a></li>
               </ul>
           </li>
       </ul>
